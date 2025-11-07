@@ -1,264 +1,28 @@
-import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>隱私權政策</title>
+</head>
+<body style="font-family:Arial,Helvetica,sans-serif;max-width:800px;margin:40px auto;line-height:1.8">
+  <h1>隱私權政策</h1>
+  <p>更新日期：2025 年 11 月 7 日</p>
+  <p>感謝您使用本應用程式（以下簡稱「本 App」）。本 App 重視您的隱私權，以下說明我們如何蒐集、使用及保護您的個人資料。</p>
 
-/// 隱私權政策頁面常數定義
-class PrivacyPolicyConstants {
-  static const Color primaryColor = Color(0xFF948C75);
-  static const Color backgroundColor = Colors.white;
-  static const Color textColor = Colors.black87;
-  static const Color greyColor = Colors.grey;
+  <h2>一、資料的蒐集與使用</h2>
+  <p>本 App 僅在提供服務所需範圍內，蒐集必要資訊。未經您同意，不會蒐集或分享您的個人資料給第三方。</p>
 
-  // 字體大小
-  static const double titleFontSize = 24.0;
-  static const double sectionTitleFontSize = 18.0;
-  static const double contentFontSize = 16.0;
-  static const double dateFontSize = 14.0;
+  <h2>二、權限使用說明</h2>
+  <p>若本 App 需要使用裝置功能（例如：網路連線、通知權限），僅用於提供應用程式主要功能。</p>
 
-  // 間距
-  static const double defaultPadding = 16.0;
-  static const double sectionSpacing = 20.0;
-  static const double smallSpacing = 8.0;
-  static const double listItemSpacing = 4.0;
-  static const double listItemLeftPadding = 10.0;
+  <h2>三、資料保護</h2>
+  <p>本 App 採取合理的技術與安全措施，防止未經授權的存取或外洩。</p>
 
-  // 文字內容
-  static const String pageTitle = '隱私權政策';
-  static const String appTitle = '飲控糖 隱私權政策';
-  static const String effectiveDate = '生效日期：2025 年 10 月 14 日';
-  static const String contactEmail = 'cges124018@gmail.com';
+  <h2>四、聯絡我們</h2>
+  <p>如對本政策有任何疑問，請聯絡我們：<a href="mailto:your@email.com">your@email.com</a></p>
 
-  // 行高
-  static const double contentLineHeight = 1.5;
-}
-
-/// 隱私權政策頁面錯誤類型
-enum PrivacyPolicyError {
-  contentLoadFailed,
-  systemUISetupFailed,
-  unknown,
-}
-
-/// 隱私權政策頁面異常類別
-class PrivacyPolicyException implements Exception {
-  final PrivacyPolicyError error;
-  final String message;
-  final dynamic originalError;
-
-  PrivacyPolicyException({
-    required this.error,
-    required this.message,
-    this.originalError,
-  });
-
-  @override
-  String toString() => 'PrivacyPolicyException: $message';
-}
-
-/// 隱私權政策頁面主類別
-class PrivacyPolicyPage extends StatelessWidget {
-  const PrivacyPolicyPage({super.key});
-
-  /// 輔助函式：建立粗體文字的段落 (用於 List Item)
-  TextSpan _buildBoldSpan(String text) {
-    // 簡單的 Markdown 替換：將 **粗體** 轉換為 FontWeight.bold
-    final parts = text.split('**');
-    List<TextSpan> spans = [];
-    for (int i = 0; i < parts.length; i++) {
-      if (i % 2 == 1) {
-        // 粗體部分
-        spans.add(TextSpan(
-          text: parts[i],
-          style: const TextStyle(fontWeight: FontWeight.bold),
-        ));
-      } else {
-        // 非粗體部分
-        spans.add(TextSpan(text: parts[i]));
-      }
-    }
-    return TextSpan(children: spans);
-  }
-
-  /// 安全的系統 UI 設置
-  void _setupSystemUI() {
-    try {
-      SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
-        statusBarColor: PrivacyPolicyConstants.primaryColor,
-      ));
-    } catch (e) {
-      // 系統 UI 設置失敗時不影響主要功能
-      debugPrint('系統 UI 設置失敗: $e');
-    }
-  }
-
-  /// 建構頁面標題
-  Widget _buildPageHeader() {
-    return const Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          PrivacyPolicyConstants.appTitle,
-          style: TextStyle(
-            fontSize: PrivacyPolicyConstants.titleFontSize,
-            fontWeight: FontWeight.bold,
-            color: PrivacyPolicyConstants.primaryColor,
-          ),
-        ),
-        SizedBox(height: PrivacyPolicyConstants.smallSpacing),
-        Text(
-          PrivacyPolicyConstants.effectiveDate,
-          style: TextStyle(
-            fontSize: PrivacyPolicyConstants.dateFontSize,
-            color: PrivacyPolicyConstants.greyColor,
-          ),
-        ),
-        SizedBox(height: PrivacyPolicyConstants.sectionSpacing),
-      ],
-    );
-  }
-
-  /// 建構區塊標題
-  Widget _buildSectionTitle(String title) {
-    return Padding(
-      padding: const EdgeInsets.only(top: 10.0, bottom: 5.0),
-      child: Text(
-        title,
-        style: const TextStyle(
-          fontSize: PrivacyPolicyConstants.sectionTitleFontSize,
-          fontWeight: FontWeight.bold,
-          color: PrivacyPolicyConstants.textColor,
-        ),
-      ),
-    );
-  }
-
-  /// 建構段落內容
-  Widget _buildParagraph(String text) {
-    return Padding(
-      padding:
-          const EdgeInsets.only(bottom: PrivacyPolicyConstants.smallSpacing),
-      child: Text(
-        text,
-        style: const TextStyle(
-          fontSize: PrivacyPolicyConstants.contentFontSize,
-          height: PrivacyPolicyConstants.contentLineHeight,
-        ),
-        textAlign: TextAlign.justify,
-      ),
-    );
-  }
-
-  /// 建構列表項目
-  Widget _buildListItem(String text) {
-    return Padding(
-      padding: const EdgeInsets.only(
-        left: PrivacyPolicyConstants.listItemLeftPadding,
-        bottom: PrivacyPolicyConstants.listItemSpacing,
-      ),
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          const Text('• ',
-              style:
-                  TextStyle(fontSize: PrivacyPolicyConstants.contentFontSize)),
-          Expanded(
-            child: RichText(
-              text: TextSpan(
-                style: const TextStyle(
-                  fontSize: PrivacyPolicyConstants.contentFontSize,
-                  height: PrivacyPolicyConstants.contentLineHeight,
-                  color: Colors.black,
-                ),
-                children: [_buildBoldSpan(text)],
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    // 設置系統 UI
-    _setupSystemUI();
-
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          PrivacyPolicyConstants.pageTitle,
-          style: TextStyle(color: Colors.white),
-        ),
-        backgroundColor: PrivacyPolicyConstants.primaryColor,
-        iconTheme: const IconThemeData(color: Colors.white),
-      ),
-      backgroundColor: PrivacyPolicyConstants.backgroundColor,
-      body: SingleChildScrollView(
-        padding: const EdgeInsets.all(PrivacyPolicyConstants.defaultPadding),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            // 頁面標題
-            _buildPageHeader(),
-
-            // 政策前言
-            _buildSectionTitle('一、政策概述與承諾'),
-            _buildParagraph(
-              '「飲控糖」應用程式（以下簡稱「本 App」或「我們」）尊重並承諾保護您的個人隱私。本政策說明了我們如何收集、使用、儲存和保護透過本 App 收集到的資訊，特別是涉及您的健康數據和身份資料。',
-            ),
-            const SizedBox(height: PrivacyPolicyConstants.sectionSpacing),
-
-            // --- 區塊 1: 資料收集 ---
-            _buildSectionTitle('二、我們收集的資訊與目的'),
-            _buildParagraph(
-              '為了提供和優化我們的糖份紀錄服務，我們可能收集以下幾類資訊：',
-            ),
-            _buildListItem(
-                '身份驗證資料：當您使用 LINE 或 Google 帳號登入時，我們會透過 Firebase Authentication 收集您的 UID、暱稱、頭像 URL 及電子郵件地址。這些資料僅用於驗證您的身份、同步帳號資料和展示用戶名稱。'),
-            _buildListItem(
-                '健康紀錄數據 (敏感個人資料)：您主動輸入的糖份、飲食紀錄、血壓、用藥等相關健康數據。這些數據是 App 服務的核心，用於提供個人化的紀錄與趨勢分析服務。'),
-            _buildListItem(
-                '應用程式使用數據：包括 App 的版本、您的設備型號、作業系統版本和基本的錯誤報告資訊。用於監測 App 效能、偵錯和確保服務穩定性。'),
-            const SizedBox(height: PrivacyPolicyConstants.sectionSpacing),
-
-            // --- 區塊 2: 資料使用 ---
-            _buildSectionTitle('三、我們如何使用您的資訊'),
-            _buildParagraph(
-              '我們收集您的個人資料主要用於以下目的，並且所有數據的處理都基於您的明確同意和服務提供的必要性：',
-            ),
-            _buildListItem('服務運營：提供、維護、保護和改善我們的「飲控糖」服務功能。'),
-            _buildListItem('個性化體驗：透過您記錄的健康數據，在 App 中顯示個人化的趨勢圖表和統計報告，幫助您管理糖份。'),
-            _buildListItem('通訊：如果適用，使用您的電子郵件地址發送重要的服務通知或帳號相關資訊。'),
-            _buildListItem('安全與合規：識別和修復 App 中的錯誤或技術問題，確保服務的安全運營。'),
-            _buildParagraph(
-              '重要聲明：本 App 提供的數據分析和趨勢僅供參考，不應用於任何醫療診斷或治療決策。如有醫療需求，請諮詢專業醫師。',
-            ),
-            const SizedBox(height: PrivacyPolicyConstants.sectionSpacing),
-
-            // --- 區塊 3: 資料儲存與安全 ---
-            _buildSectionTitle('四、資料儲存、保護與保留'),
-            _buildParagraph(
-              '儲存位置：您的所有身份資訊和健康紀錄數據儲存在 Google 的 Firebase Firestore 服務器上。Firebase 服務遵循業界標準的安全規範。',
-            ),
-            _buildParagraph(
-              '安全措施：我們採取合理的技術和組織措施來保護您的資料，防止未經授權的存取、洩露、變更或銷毀。然而，網際網路傳輸或電子儲存並不總是 100% 安全的。',
-            ),
-            _buildParagraph(
-              '資料保留：您的數據將被保留，直到您主動刪除帳號為止。帳號刪除後，相關個人數據將依據 Firebase 的標準流程在合理時間內被永久移除。',
-            ),
-            const SizedBox(height: PrivacyPolicyConstants.sectionSpacing),
-
-            // --- 區塊 4: 聯絡我們 ---
-            _buildSectionTitle('五、聯絡我們'),
-            _buildParagraph(
-              '如果您對本隱私權政策、您的數據處理或行使您的隱私權利有任何疑問，請隨時透過以下方式與我們聯繫：',
-            ),
-            _buildParagraph(
-              '電子郵件： ${PrivacyPolicyConstants.contactEmail}',
-            ),
-            const SizedBox(height: 50),
-          ],
-        ),
-      ),
-    );
-  }
-}
+  <hr>
+  <p style="font-size:0.9em;color:#666;">© 2025 本應用程式 All rights reserved.</p>
+</body>
+</html>
