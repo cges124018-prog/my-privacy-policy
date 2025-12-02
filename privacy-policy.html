@@ -1,28 +1,306 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-TW">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>隱私權政策</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隱私權政策 - 飲控糖</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #948C75;
+            margin-bottom: 10px;
+            font-size: 32px;
+            border-bottom: 3px solid #948C75;
+            padding-bottom: 10px;
+        }
+        
+        h2 {
+            color: #948C75;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            font-size: 24px;
+            border-bottom: 2px solid #948C75;
+            padding-bottom: 5px;
+        }
+        
+        h3 {
+            color: #666;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        ol, ul {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .date {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .method-box {
+            background: #f9f9f9;
+            border-left: 4px solid #948C75;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .email-link {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .email-link:hover {
+            text-decoration: underline;
+        }
+        
+        .warning {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .warning strong {
+            color: #856404;
+        }
+        
+        .contact-box {
+            background: #e7f3ff;
+            border-left: 4px solid #0066cc;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .highlight {
+            background: #f0f0f0;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
 </head>
-<body style="font-family:Arial,Helvetica,sans-serif;max-width:800px;margin:40px auto;line-height:1.8">
-  <h1>隱私權政策</h1>
-  <p>更新日期：2025 年 11 月 7 日</p>
-  <p>感謝您使用本應用程式（以下簡稱「本 App」）。本 App 重視您的隱私權，以下說明我們如何蒐集、使用及保護您的個人資料。</p>
+<body>
+    <div class="container">
+        <h1>飲控糖 隱私權政策</h1>
+        <p class="date">生效日期：2025 年 10 月 14 日</p>
+        
+        <div class="section">
+            <p>歡迎使用「飲控糖」應用程式（以下簡稱「本應用程式」或「我們」）。我們重視您的隱私權，並致力於保護您的個人資料。本隱私權政策說明我們如何收集、使用、儲存和保護您的資訊。</p>
+            <p>使用本應用程式即表示您同意本隱私權政策的內容。如果您不同意本政策，請勿使用本應用程式。</p>
+        </div>
 
-  <h2>一、資料的蒐集與使用</h2>
-  <p>本 App 僅在提供服務所需範圍內，蒐集必要資訊。未經您同意，不會蒐集或分享您的個人資料給第三方。</p>
+        <h2>一、資訊收集</h2>
+        <div class="section">
+            <p>我們收集以下類型的資訊：</p>
+            <ul>
+                <li><strong>使用資料：</strong>您使用本應用程式的記錄，包括飲料選擇、糖分攝取量等</li>
+                <li><strong>裝置資訊：</strong>裝置類型、作業系統版本、應用程式版本</li>
+                <li><strong>分析資料：</strong>應用程式使用統計、錯誤報告等匿名資料</li>
+                <li><strong>位置資訊：</strong>僅在您同意的情況下收集（用於提供本地化服務）</li>
+                <li><strong>帳戶資訊：</strong>如果您使用 Google 或 LINE 登入，我們會收集您的帳戶識別資訊（UID）</li>
+            </ul>
+            <p>我們不會收集您的個人身份資訊，如姓名、電話號碼或電子郵件地址（除非您主動提供）。</p>
+        </div>
 
-  <h2>二、權限使用說明</h2>
-  <p>若本 App 需要使用裝置功能（例如：網路連線、通知權限），僅用於提供應用程式主要功能。</p>
+        <h2>二、資訊使用</h2>
+        <div class="section">
+            <p>我們使用收集的資訊用於：</p>
+            <ul>
+                <li><strong>提供核心功能：</strong>記錄和管理您的糖分攝取</li>
+                <li><strong>改善服務：</strong>分析使用模式以優化應用程式功能</li>
+                <li><strong>個人化體驗：</strong>根據您的使用習慣提供相關建議</li>
+                <li><strong>技術支援：</strong>診斷和解決技術問題</li>
+                <li><strong>合規要求：</strong>遵守相關法律法規</li>
+                <li><strong>通訊：</strong>如果適用，使用您的電子郵件地址發送重要的服務通知或帳號相關資訊</li>
+                <li><strong>安全與合規：</strong>識別和修復 App 中的錯誤或技術問題，確保服務的安全運營</li>
+            </ul>
+            <p class="warning"><strong>重要聲明：</strong>本 App 提供的數據分析和趨勢僅供參考，不應用於任何醫療診斷或治療決策。如有醫療需求，請諮詢專業醫師。</p>
+        </div>
 
-  <h2>三、資料保護</h2>
-  <p>本 App 採取合理的技術與安全措施，防止未經授權的存取或外洩。</p>
+        <h2>三、資訊分享</h2>
+        <div class="section">
+            <p>我們不會出售、交易或轉讓您的個人資訊給第三方，除非：</p>
+            <ul>
+                <li>獲得您的明確同意</li>
+                <li>法律要求或法院命令</li>
+                <li>保護我們的權利、財產或安全</li>
+                <li>與可信賴的服務提供商合作（如 Firebase、Google AdMob），但他們必須遵守相同的隱私保護標準</li>
+            </ul>
+        </div>
 
-  <h2>四、聯絡我們</h2>
-  <p>如對本政策有任何疑問，請聯絡我們：<a href="mailto:your@email.com">your@email.com</a></p>
+        <h2>四、資料儲存、保護與保留</h2>
+        <div class="section">
+            <h3>儲存位置</h3>
+            <p>您的所有身份資訊和健康紀錄數據儲存在 Google 的 Firebase Firestore 服務器上。Firebase 服務遵循業界標準的安全規範。</p>
+            
+            <h3>安全措施</h3>
+            <p>我們採取合理的技術和組織措施來保護您的資料，防止未經授權的存取、洩露、變更或銷毀。然而，網際網路傳輸或電子儲存並不總是 100% 安全的。</p>
+            
+            <h3>資料保留</h3>
+            <p>您的數據將被保留，直到您主動刪除帳號為止。帳號刪除後，相關個人數據將依據 Firebase 的標準流程在合理時間內被永久移除。</p>
+        </div>
 
-  <hr>
-  <p style="font-size:0.9em;color:#666;">© 2025 本應用程式 All rights reserved.</p>
+        <h2>五、如何刪除您的帳戶和資料</h2>
+        <div class="section">
+            <p>您有權隨時刪除您的帳戶和所有相關資料。我們提供以下方式供您刪除帳戶：</p>
+            
+            <div class="method-box">
+                <h3>方法一：透過應用程式內刪除（推薦）</h3>
+                <p>這是最快速、最直接的方式：</p>
+                <ol>
+                    <li>開啟「飲控糖」應用程式</li>
+                    <li>進入「設定」頁面（點擊左上角選單圖示）</li>
+                    <li>向下滾動，找到「刪除帳戶」選項（位於設定頁面底部）</li>
+                    <li>點擊「刪除帳戶」，仔細閱讀刪除說明</li>
+                    <li>確認刪除操作（此操作無法復原）</li>
+                </ol>
+                <p><strong>系統將自動刪除以下資料：</strong></p>
+                <ul>
+                    <li>所有雲端及本機數據</li>
+                    <li>所有糖分記錄</li>
+                    <li>所有個人設定</li>
+                    <li>Firebase Auth 帳號</li>
+                    <li>Firestore 中的用戶資料</li>
+                </ul>
+            </div>
+            
+            <div class="method-box">
+                <h3>方法二：透過電子郵件請求刪除</h3>
+                <p>如果您無法使用應用程式內功能，或需要協助，請發送電子郵件至：</p>
+                <div class="contact-box">
+                    <p style="margin-bottom: 10px;"><strong>電子郵件地址：</strong></p>
+                    <p style="font-size: 18px;">
+                        <a href="mailto:cges124018@gmail.com?subject=請求刪除帳戶和資料" class="email-link">
+                            cges124018@gmail.com
+                        </a>
+                    </p>
+                </div>
+                <p><strong>請在郵件中提供以下資訊：</strong></p>
+                <ul>
+                    <li>您的用戶 ID 或登入方式（Google / LINE / 匿名）</li>
+                    <li>刪除帳戶的明確請求</li>
+                    <li>您的聯絡方式（用於確認身份）</li>
+                </ul>
+                <p>我們將在收到您的請求後 <strong>7 個工作天內</strong>處理您的刪除請求。</p>
+            </div>
+            
+            <div class="warning">
+                <p><strong>⚠️ 重要提醒：</strong></p>
+                <ul>
+                    <li>刪除帳戶是不可逆的操作，請確認您已備份重要資料</li>
+                    <li>刪除後，您將無法恢復任何已刪除的資料</li>
+                    <li>如果您使用 Google 或 LINE 登入，刪除帳戶不會影響您在這些服務中的帳戶</li>
+                    <li>刪除帳戶後，您需要重新註冊才能再次使用應用程式</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>六、第三方服務</h2>
+        <div class="section">
+            <p>本應用程式使用以下第三方服務：</p>
+            <ul>
+                <li><strong>Firebase：</strong>用於資料儲存、認證和分析</li>
+                <li><strong>Google AdMob：</strong>用於顯示廣告</li>
+                <li><strong>Google Analytics：</strong>用於使用統計分析</li>
+                <li><strong>LINE SDK：</strong>用於 LINE 登入功能</li>
+            </ul>
+            <p>這些服務有自己的隱私權政策，建議您查看相關條款。</p>
+        </div>
+
+        <h2>七、您的權利</h2>
+        <div class="section">
+            <p>您有權：</p>
+            <ul>
+                <li>查看我們收集的關於您的資訊</li>
+                <li>要求更正不準確的資訊</li>
+                <li>要求刪除您的資料（詳見第五節）</li>
+                <li>撤回同意（如果適用）</li>
+                <li>提出投訴或疑問</li>
+            </ul>
+            <p>如需行使這些權利，請透過應用程式內的意見回饋功能或電子郵件聯繫我們。</p>
+        </div>
+
+        <h2>八、兒童隱私</h2>
+        <div class="section">
+            <p>本應用程式不針對 13 歲以下的兒童設計。我們不會故意收集 13 歲以下兒童的個人資訊。如果我們發現收集了此類資訊，將立即刪除。</p>
+        </div>
+
+        <h2>九、政策變更</h2>
+        <div class="section">
+            <p>我們可能會不時更新本隱私權政策。重大變更將透過應用程式更新通知您。建議您定期查看本政策以了解最新資訊。</p>
+        </div>
+
+        <h2>十、聯絡我們</h2>
+        <div class="section">
+            <p>如果您對本隱私權政策、您的數據處理或行使您的隱私權利有任何疑問，請隨時透過以下方式與我們聯繫：</p>
+            <div class="contact-box">
+                <p><strong>電子郵件：</strong> <a href="mailto:cges124018@gmail.com" class="email-link">cges124018@gmail.com</a></p>
+                <p><strong>應用程式內意見回饋：</strong>設定 → 意見回饋</p>
+            </div>
+            <p>我們將盡快回覆您的詢問。</p>
+        </div>
+
+        <hr style="margin: 40px 0; border: none; border-top: 1px solid #ddd;">
+        
+        <p style="text-align: center; color: #666; font-size: 14px;">
+            最後更新：2025 年 12 月<br>
+            本隱私權政策適用於「飲控糖」應用程式（版本 1.0 及以上）
+        </p>
+    </div>
 </body>
 </html>
+
