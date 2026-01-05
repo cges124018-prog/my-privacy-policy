@@ -1,232 +1,188 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-Hant">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>飲控糖 隱私權政策</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
             line-height: 1.6;
             color: #333;
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #f5f5f5;
         }
-        .container {
-            background-color: white;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
+
         h1 {
             color: #948C75;
-            font-size: 28px;
-            margin-bottom: 10px;
+            text-align: center;
         }
-        .date {
-            color: #999;
-            font-size: 14px;
-            margin-bottom: 30px;
-        }
+
         h2 {
             color: #333;
-            font-size: 20px;
+            font-size: 1.25em;
             margin-top: 30px;
-            margin-bottom: 15px;
             border-bottom: 2px solid #948C75;
-            padding-bottom: 5px;
+            padding-bottom: 10px;
         }
-        h3 {
-            color: #555;
-            font-size: 17px;
-            margin-top: 20px;
-            margin-bottom: 10px;
+
+        .date {
+            color: #666;
+            text-align: center;
+            font-size: 0.9em;
+            margin-bottom: 40px;
         }
+
         p {
             margin-bottom: 15px;
             text-align: justify;
         }
+
         ul {
             margin-bottom: 15px;
             padding-left: 20px;
         }
+
         li {
-            margin-bottom: 8px;
+            margin-bottom: 10px;
         }
-        .highlight {
-            background-color: #fff3cd;
-            padding: 15px;
-            border-left: 4px solid #ffc107;
-            margin: 20px 0;
+
+        strong {
+            font-weight: bold;
         }
+
         .important {
-            background-color: #ffebee;
-            padding: 15px;
-            border-left: 4px solid #f44336;
-            margin: 20px 0;
-            color: #c62828;
+            color: #d32f2f;
+            font-weight: bold;
         }
-        .contact {
-            background-color: #e8f5e9;
+
+        .contact-info {
+            background-color: #f9f9f9;
             padding: 15px;
             border-radius: 5px;
-            margin-top: 30px;
-        }
-        strong {
-            font-weight: 600;
+            margin-top: 20px;
         }
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <h1>飲控糖 隱私權政策</h1>
-        <p class="date">生效日期:2025 年 12 月 26 日</p>
-        <h2>一、政策概述與承諾</h2>
-        <p>「飲控糖」應用程式(以下簡稱「本 App」或「我們」)尊重並承諾保護您的個人隱私。本政策說明了我們如何收集、使用、儲存和保護透過本 App 收集到的資訊,特別是涉及您的健康數據、身份資料、使用行為和裝置資訊。</p>
-        <p>使用本 App 即表示您同意本隱私權政策的條款。若您不同意本政策,請勿使用本 App。</p>
-        <h2>二、我們收集的資訊與目的</h2>
-        <p>為了提供和優化我們的糖份管理服務,我們可能收集以下幾類資訊:</p>
-        <h3>2.1 身份驗證資料</h3>
-        <ul>
-            <li><strong>登入資訊</strong>:當您使用 LINE、Google 或匿名方式登入時,我們會透過 Firebase Authentication 收集您的 UID(使用者識別碼)、暱稱、頭像 URL
-                及電子郵件地址(如適用)。</li>
-            <li><strong>目的</strong>:用於驗證您的身份、同步帳號資料、展示用戶名稱和提供個人化服務。</li>
-        </ul>
-        <h3>2.2 健康紀錄數據(敏感個人資料)</h3>
-        <ul>
-            <li><strong>糖分記錄</strong>:您主動輸入的飲料名稱、糖分含量、甜度選擇、配料資訊、店家名稱等飲食紀錄。</li>
-            <li><strong>每日統計</strong>:基於您的記錄自動計算的每日糖分攝取量、趨勢分析等數據。</li>
-            <li><strong>目的</strong>:這些數據是 App 服務的核心,用於提供個人化的紀錄、趨勢分析、糖分來源拆解圖和健康管理建議。</li>
-        </ul>
-        <h3>2.3 應用程式使用數據</h3>
-        <ul>
-            <li><strong>裝置資訊</strong>:包括 App 版本、裝置型號、作業系統版本、螢幕解析度、語言設定等。</li>
-            <li><strong>使用行為</strong>:包括功能使用頻率、頁面瀏覽記錄、按鈕點擊事件、錯誤報告等。</li>
-            <li><strong>目的</strong>:用於監測 App 效能、偵錯、改善使用者體驗和確保服務穩定性。</li>
-        </ul>
-        <h3>2.4 點數系統與訂閱資料</h3>
-        <ul>
-            <li><strong>點數記錄</strong>:您的點數餘額、獲得點數的活動記錄(如每日登入、記錄飲料)、兌換記錄等。</li>
-            <li><strong>訂閱狀態</strong>:進階版訂閱狀態、訂閱期限、付款記錄(透過 App Store 或 Google Play 處理)。</li>
-            <li><strong>目的</strong>:用於管理點數系統、提供獎勵機制、驗證訂閱權限和提供進階功能。</li>
-        </ul>
-        <h3>2.5 OCR 與 AI 分析資料</h3>
-        <ul>
-            <li><strong>圖片資料</strong>:當您使用拍照識別功能時,我們會處理您上傳的飲料標籤或菜單照片。</li>
-            <li><strong>AI 分析結果</strong>:透過 Google Gemini AI 生成的飲料識別結果、糖分估算和健康建議。</li>
-            <li><strong>目的</strong>:用於自動識別飲料資訊、估算糖分含量和提供個人化建議。</li>
-            <li><strong>重要說明</strong>:圖片僅用於即時分析,不會永久儲存在我們的伺服器上。</li>
-        </ul>
-        <h3>2.6 廣告與分析服務資料</h3>
-        <ul>
-            <li><strong>廣告識別碼</strong>:用於顯示個人化廣告(僅限免費版使用者)。</li>
-            <li><strong>分析資料</strong>:透過 Firebase Analytics 和 Google AdMob 收集的匿名使用統計資料。</li>
-            <li><strong>目的</strong>:用於改善服務品質、提供相關廣告和支持免費版本的營運。</li>
-        </ul>
-        <h2>三、我們如何使用您的資訊</h2>
-        <p>我們收集您的個人資料主要用於以下目的,並且所有數據的處理都基於您的明確同意和服務提供的必要性:</p>
-        <ul>
-            <li><strong>服務運營</strong>:提供、維護、保護和改善我們的「Drink & Sugar Control」服務功能。</li>
-            <li><strong>個人化體驗</strong>:透過您記錄的健康數據,在 App 中顯示個人化的趨勢圖表、統計報告、糖分來源分析和 AI 健康建議。</li>
-            <li><strong>點數與獎勵</strong>:管理點數系統、追蹤連續登入天數、處理點數兌換和提供獎勵機制。</li>
-            <li><strong>訂閱管理</strong>:驗證進階版訂閱狀態、提供訂閱專屬功能(如無廣告體驗、糖分來源拆解圖)。</li>
-            <li><strong>通訊</strong>:如果適用,使用您的電子郵件地址發送重要的服務通知、帳號相關資訊或行銷訊息(您可隨時取消訂閱)。</li>
-            <li><strong>安全與合規</strong>:識別和修復 App 中的錯誤或技術問題,防止詐欺行為,確保服務的安全運營。</li>
-            <li><strong>分析與改善</strong>:分析使用者行為模式,改善 App 功能、介面設計和使用者體驗。</li>
-            <li><strong>廣告投放</strong>:為免費版使用者顯示相關廣告,支持 App 的免費營運(進階版使用者無廣告)。</li>
-        </ul>
-        <div class="important">
-            <strong>⚠️ 重要聲明</strong><br>
-            本 App 提供的數據分析、趨勢圖表和 AI 建議僅供參考,不應用於任何醫療診斷或治療決策。如有醫療需求,請諮詢專業醫師。
-        </div>
-        <h2>四、第三方服務與資料分享</h2>
-        <p>本 App 使用以下第三方服務,這些服務可能會收集您的資訊:</p>
-        <ul>
-            <li><strong>Firebase (Google)</strong>:用於身份驗證、資料儲存、分析和雲端功能。</li>
-            <li><strong>Google AdMob</strong>:用於顯示廣告(僅限免費版使用者)。</li>
-            <li><strong>Google Gemini AI</strong>:用於 OCR 圖片識別和 AI 分析建議。</li>
-            <li><strong>LINE Login SDK</strong>:用於 LINE 帳號登入。</li>
-            <li><strong>Google Sign-In</strong>:用於 Google 帳號登入。</li>
-            <li><strong>App Store / Google Play</strong>:用於處理訂閱付款(我們不會收集您的付款資訊)。</li>
-        </ul>
-        <p><strong>重要說明</strong>:我們不會將您的個人資料出售給第三方。我們僅在以下情況下分享您的資訊:</p>
-        <ul>
-            <li>經您明確同意</li>
-            <li>為提供服務所必需(如使用 Firebase 儲存數據)</li>
-            <li>遵守法律要求或法院命令</li>
-            <li>保護我們的權利、財產或安全</li>
-        </ul>
-        <h2>五、個人資料跨境傳輸</h2>
-        <div class="highlight">
-            <strong>📍 跨境傳輸說明</strong>
-        </div>
-        <p>本 App 使用 Google Firebase 等雲端服務儲存與處理資料,<strong>您的個人資料可能被傳輸至台灣以外的國家或地區(包括但不限於美國)進行儲存或處理。</strong></p>
-        <ul>
-            <li>我們已採取合理的技術與組織措施,確保您的資料在跨境傳輸過程中受到適當保護,符合相關法律要求。</li>
-            <li>這些第三方服務提供商(如 Google)遵守國際資料保護標準,包括 GDPR 等規範。</li>
-            <li>使用本 App 即表示您同意您的個人資料可能被跨境傳輸至前述國家或地區。</li>
-            <li>若您不同意資料跨境傳輸,請勿使用本 App。</li>
-        </ul>
-        <h2>六、兒童隱私保護</h2>
-        <div class="highlight">
-            <strong>👶 兒童保護政策</strong>
-        </div>
-        <p>我們非常重視兒童的隱私保護:</p>
-        <ul>
-            <li><strong>未滿 12 歲的兒童不得使用本 App。</strong></li>
-            <li>我們不會故意收集 12 歲以下兒童的個人資料。</li>
-            <li>若我們發現誤收集了 12 歲以下兒童的資料,將立即刪除。</li>
-            <li>12-18 歲的未成年人使用本 App 前,應取得父母或法定監護人的同意。</li>
-            <li>父母或監護人有權要求查看、修改或刪除其子女的個人資料。</li>
-        </ul>
-        <p>若您是父母或監護人,發現您的孩子在未經您同意的情況下向我們提供了個人資料,請立即聯繫我們,我們將盡快刪除相關資料。</p>
-        <h2>七、資料安全與保護措施</h2>
-        <p>我們採取以下措施保護您的個人資料:</p>
-        <ul>
-            <li><strong>加密傳輸</strong>:所有資料傳輸均使用 HTTPS/SSL 加密。</li>
-            <li><strong>安全儲存</strong>:資料儲存在 Google Firebase 的安全雲端伺服器。</li>
-            <li><strong>存取控制</strong>:僅授權人員可存取個人資料,並受嚴格的保密協議約束。</li>
-            <li><strong>定期審查</strong>:定期檢視和更新安全措施,確保資料安全。</li>
-        </ul>
-        <p>然而,請注意沒有任何網路傳輸或電子儲存方式是 100% 安全的。我們會盡力保護您的資料,但無法保證絕對安全。</p>
-        <h2>八、您的隱私權利</h2>
-        <p>根據相關法律法規,您對您的個人資料享有以下權利:</p>
-        <ul>
-            <li><strong>存取權</strong>:您可以隨時在 App 內查看您的所有記錄和個人資料。</li>
-            <li><strong>修改權</strong>:您可以在 App 內修改或更新您的記錄和設定。</li>
-            <li><strong>刪除權</strong>:您可以隨時刪除個別記錄或整個帳號。</li>
-            <li><strong>匯出權</strong>:您可以要求匯出您的所有資料(請聯繫我們)。</li>
-            <li><strong>反對權</strong>:您可以反對某些資料處理活動(如行銷訊息)。</li>
-            <li><strong>撤回同意權</strong>:您可以隨時撤回對資料處理的同意(可能影響服務功能)。</li>
-        </ul>
-        <h2>九、如何刪除您的帳戶和資料</h2>
-        <p>您有權隨時刪除您的帳戶和所有相關資料。請在 App 內設定頁面找到「刪除帳戶」選項,或透過電子郵件聯繫我們:cges124018@gmail.com</p>
-        <p><strong>我們將在收到您的請求後 7 個工作日內處理您的刪除請求。</strong></p>
-        <p>刪除帳戶後:</p>
-        <ul>
-            <li>您的所有個人資料、健康記錄和點數將被永久刪除</li>
-            <li>您將無法恢復這些資料</li>
-            <li>若您有進階版訂閱,請先在 App Store 或 Google Play 取消訂閱</li>
-        </ul>
-        <h2>十、政策更新</h2>
-        <p>我們可能會不時更新本隱私權政策。當我們做出重大變更時,我們會:</p>
-        <ul>
-            <li>在 App 內顯示通知</li>
-            <li>更新本頁面頂部的「生效日期」</li>
-            <li>透過電子郵件通知您(如適用)</li>
-        </ul>
-        <p>建議您定期查看本政策,以了解我們如何保護您的資訊。繼續使用本 App 即表示您接受更新後的政策。</p>
-        <h2>十一、聯絡我們</h2>
-        <div class="contact">
-            <p>如果您對本隱私權政策、您的數據處理或行使您的隱私權利有任何疑問,請隨時透過以下方式與我們聯繫:</p>
-            <p><strong>電子郵件:</strong> cges124018@gmail.com</p>
-            <p>我們將在收到您的請求後 7 個工作日內回覆。</p>
-        </div>
-        <p style="text-align: center; margin-top: 40px; color: #999; font-size: 14px;">
-            © 2025 飲控糖 Drink & Sugar Control. All rights reserved.
-        </p>
+    <h1>飲控糖 隱私權政策</h1>
+    <div class="date">生效日期：2025 年 12 月 21 日</div>
+
+    <h2>一、政策概述與承諾</h2>
+    <p>「飲控糖」應用程式（以下簡稱「本 App」或「我們」）尊重並承諾保護您的個人隱私。本政策說明了我們如何收集、使用、儲存和保護透過本 App 收集到的資訊，特別是涉及您的健康數據、身份資料、使用行為和裝置資訊。</p>
+    <p>使用本 App 即表示您同意本隱私權政策的條款。若您不同意本政策，請勿使用本 App。</p>
+
+    <h2>二、我們收集的資訊與目的</h2>
+    <p>為了提供和優化我們的糖份管理服務，我們可能收集以下幾類資訊：</p>
+
+    <h3>2.1 身份驗證資料</h3>
+    <ul>
+        <li><strong>登入資訊</strong>：當您使用 LINE、Google 或匿名方式登入時，我們會透過 Appwrite Authentication 收集您的 User ID（使用者識別碼）、暱稱、頭像 URL
+            及電子郵件地址（如適用）。</li>
+        <li><strong>目的</strong>：用於驗證您的身份、同步帳號資料、展示用戶名稱和提供個人化服務。</li>
+    </ul>
+
+    <h3>2.2 健康紀錄數據（敏感個人資料）</h3>
+    <ul>
+        <li><strong>糖分記錄</strong>：您主動輸入的飲料名稱、糖分含量、甜度選擇、配料資訊、店家名稱等飲食紀錄。</li>
+        <li><strong>每日統計</strong>：基於您的記錄自動計算的每日糖分攝取量、趨勢分析等數據。</li>
+        <li><strong>目的</strong>：這些數據是 App 服務的核心，用於提供個人化的紀錄、趨勢分析、糖分來源拆解圖和健康管理建議。</li>
+    </ul>
+
+    <h3>2.3 應用程式使用數據</h3>
+    <ul>
+        <li><strong>裝置資訊</strong>：包括 App 版本、裝置型號、作業系統版本、螢幕解析度、語言設定等。</li>
+        <li><strong>使用行為</strong>：包括功能使用頻率、頁面瀏覽記錄、按鈕點擊事件、錯誤報告等。</li>
+        <li><strong>目的</strong>：用於監測 App 效能、偵錯、改善使用者體驗和確保服務穩定性。</li>
+    </ul>
+
+    <h3>2.4 點數系統與訂閱資料</h3>
+    <ul>
+        <li><strong>點數記錄</strong>：您的點數餘額、獲得點數的活動記錄（如每日登入、記錄飲料）、兌換記錄等。</li>
+        <li><strong>訂閱狀態</strong>：進階版訂閱狀態、訂閱期限、付款記錄（透過 App Store 或 Google Play 處理）。</li>
+        <li><strong>目的</strong>：用於管理點數系統、提供獎勵機制、驗證訂閱權限和提供進階功能。</li>
+    </ul>
+
+    <h3>2.5 OCR 與 AI 分析資料</h3>
+    <ul>
+        <li><strong>圖片資料</strong>：當您使用拍照識別功能時，我們會處理您上傳的飲料標籤或菜單照片。</li>
+        <li><strong>AI 分析結果</strong>：透過 Google Gemini AI 生成的飲料識別結果、糖分估算和健康建議。</li>
+        <li><strong>目的</strong>：用於自動識別飲料資訊、估算糖分含量和提供個人化建議。</li>
+        <li><strong>重要說明</strong>：圖片僅用於即時分析，不會永久儲存在我們的伺服器上（除非您選擇保存）。</li>
+    </ul>
+
+    <h3>2.6 廣告與分析服務資料</h3>
+    <ul>
+        <li><strong>廣告識別碼</strong>：用於顯示個人化廣告（僅限免費版使用者）。</li>
+        <li><strong>分析資料</strong>：透過 Google AdMob 和應用程式內部日誌收集的匿名使用統計資料。</li>
+        <li><strong>目的</strong>：用於改善服務品質、提供相關廣告和支持免費版本的營運。</li>
+    </ul>
+
+    <h2>三、我們如何使用您的資訊</h2>
+    <p>我們收集您的個人資料主要用於以下目的，並且所有數據的處理都基於您的明確同意和服務提供的必要性：</p>
+    <ul>
+        <li><strong>服務運營</strong>：提供、維護、保護和改善我們的「Drink & Sugar Control」服務功能。</li>
+        <li><strong>個人化體驗</strong>：透過您記錄的健康數據，在 App 中顯示個人化的趨勢圖表、統計報告、糖分來源分析和 AI 健康建議。</li>
+        <li><strong>點數與獎勵</strong>：管理點數系統、追蹤連續登入天數、處理點數兌換和提供獎勵機制。</li>
+        <li><strong>訂閱管理</strong>：驗證進階版訂閱狀態、提供訂閱專屬功能（如無廣告體驗、糖分來源拆解圖）。</li>
+        <li><strong>通訊</strong>：如果適用，使用您的電子郵件地址發送重要的服務通知、帳號相關資訊或行銷訊息（您可隨時取消訂閱）。</li>
+        <li><strong>安全與合規</strong>：識別和修復 App 中的錯誤或技術問題，防止詐欺行為，確保服務的安全運營。</li>
+        <li><strong>分析與改善</strong>：分析使用者行為模式，改善 App 功能、介面設計和使用者體驗。</li>
+        <li><strong>廣告投放</strong>：為免費版使用者顯示相關廣告，支持 App 的免費營運（進階版使用者無廣告）。</li>
+    </ul>
+    <p class="important">重要聲明：本 App 提供的數據分析、趨勢圖表和 AI 建議僅供參考，不應用於任何醫療診斷或治療決策。如有醫療需求，請諮詢專業醫師。</p>
+
+    <h2>四、第三方服務與資料分享</h2>
+    <p>本 App 使用以下第三方服務，這些服務可能會收集您的資訊：</p>
+    <ul>
+        <li><strong>Appwrite Cloud</strong>：用於後端服務、身份驗證、資料庫存儲。</li>
+        <li><strong>Google AdMob</strong>：用於顯示廣告（僅限免費版使用者）。</li>
+        <li><strong>Google Gemini AI</strong>：用於 OCR 圖片識別和 AI 分析建議。</li>
+        <li><strong>LINE Login SDK</strong>：用於 LINE 帳號登入整合。</li>
+        <li><strong>Google Sign-In</strong>：用於 Google 帳號登入整合。</li>
+        <li><strong>App Store / Google Play</strong>：用於處理訂閱付款（我們不會收集您的付款資訊）。</li>
+    </ul>
+    <p><strong>重要說明</strong>：我們不會將您的個人資料出售給第三方。我們僅在以下情況下分享您的資訊：</p>
+    <ul>
+        <li>經您明確同意</li>
+        <li>為提供服務所必需（如使用 Appwrite 儲存數據）</li>
+        <li>遵守法律要求或法院命令</li>
+        <li>保護我們的權利、財產或安全</li>
+    </ul>
+
+    <h2>五、您的隱私權利</h2>
+    <p>根據相關法律法規，您對您的個人資料享有以下權利：</p>
+    <ul>
+        <li><strong>存取權</strong>：您可以隨時在 App 內查看您的所有記錄和個人資料。</li>
+        <li><strong>修改權</strong>：您可以在 App 內修改或更新您的記錄和設定。</li>
+        <li><strong>刪除權</strong>：您可以隨時刪除個別記錄或整個帳號（請參閱第六章）。</li>
+        <li><strong>匯出權</strong>：您可以要求匯出您的所有資料（請聯繫我們）。</li>
+        <li><strong>反對權</strong>：您可以反對某些資料處理活動（如行銷訊息）。</li>
+        <li><strong>撤回同意權</strong>：您可以隨時撤回對資料處理的同意（可能影響服務功能）。</li>
+    </ul>
+
+    <h2>六、如何刪除您的帳戶和資料</h2>
+    <p>您有權隨時刪除您的帳戶和所有相關資料。請在 App 內設定頁面找到「刪除帳戶」選項，或透過電子郵件聯繫我們：dscontrollertw@proton.me</p>
+    <p><strong>我們將在收到您的請求後 7 個工作日內處理您的刪除請求。當您的帳戶被刪除後，所有與該帳戶關聯的資料（包括糖分記錄、點數等）將被永久刪除且無法恢復。</strong></p>
+
+    <h2>七、個人資料跨境傳輸</h2>
+    <p>本 App 使用 Appwrite Cloud (Germany/Global) 等雲端服務儲存與處理資料，您的個人資料可能被傳輸至台灣以外的國家或地區（包括但不限於德國）進行儲存或處理。</p>
+    <ul>
+        <li>我們已採取合理的技術與組織措施，確保您的資料在跨境傳輸過程中受到適當保護，符合相關法律要求。</li>
+        <li>使用本 App 即表示您同意您的個人資料可能被跨境傳輸至前述國家或地區。</li>
+        <li>若您不同意資料跨境傳輸，請勿使用本 App。</li>
+    </ul>
+
+    <h2>八、聯絡我們</h2>
+    <div class="contact-info">
+        <p>如果您對本隱私權政策、您的數據處理或行使您的隱私權利有任何疑問，請隨時透過以下方式與我們聯繫：</p>
+        <p><strong>電子郵件： dscontrollertw@proton.me</strong></p>
+        <p>我們將在收到您的請求後 7 個工作日內回覆。</p>
     </div>
+
 </body>
+
 </html>
